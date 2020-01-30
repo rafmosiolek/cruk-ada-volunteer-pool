@@ -6,19 +6,19 @@ See it live: http://cruk-ada-volunteer-pool.appspot.com/
 
 Please, don't use https protocol. This page is available only over http:// right now.
 
-# Ground rules
-
-1. Do not push directly to master (you won't be able to anyway, but don't try).
-2. Branch out off staging branch and after your work is finished, merge it to staging.
-3. Master will pull changes from staging daily and it auto deploy it to the http://cruk-ada-volunteer-pool.appspot.com/
-4. Have fun, ask questions, tell everyone about what you are working on. :-)
-
 # Risk Assessment
 
 We have analysed the possible risks of our application and produced some plans for mitigation of these risks. 
 
 See the document here:
 https://docs.google.com/document/d/16CPFCwYBZ0CX7pNNbi5WQX473_RDej8L5rpntDsSyFo/edit?usp=sharing
+
+# Ground rules
+
+1. Do not push directly to master (you won't be able to anyway, but don't try).
+2. Branch out off staging branch and after your work is finished, merge it to staging.
+3. Master will pull changes from staging daily and it auto deploy it to the http://cruk-ada-volunteer-pool.appspot.com/
+4. Have fun, ask questions, tell everyone about what you are working on. :-)
 
 ## Getting started
 
