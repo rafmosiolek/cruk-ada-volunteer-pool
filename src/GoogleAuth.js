@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import Event from "./Event";
 import App from "./App";
 import Redirect from "./index";
 import logo from "./images/CRUK-logo.png";
-import "./App.css";
+import Event from "./Event";
 import * as firebase from "firebase";
 import * as firebaseui from "firebaseui";
 import "firebase/auth";
@@ -23,6 +22,8 @@ firebase.initializeApp(firebaseConfig);
 
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
+//preloading constants:
+
 function GoogleAuth() {
   var uiConfig = {
     callbacks: {
@@ -36,7 +37,6 @@ function GoogleAuth() {
       uiShown: function() {
         // The widget is rendered.
         // Hide the loader.
-        document.querySelector(".loader").style.display = "none";
       }
     },
     // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
@@ -54,23 +54,34 @@ function GoogleAuth() {
 
   // Initialize the FirebaseUI Widget using Firebase.
   ui.start("#firebaseui-auth-container", uiConfig);
-  console.log(document.querySelector("#firebaseui-auth-container"));
   const [isAuthenticated, setIsAuth] = useState(false);
 
+  //check if the user has already played
+  if (isAuthenticated) {
+  }
   return (
     <>
-      <div className="GoogleAuth">
-        <img
-          src={logo}
-          className="homepage-logo"
-          onClick={() => {
-            Redirect(<App />);
-          }}
-          alt="logo"
-        />
-
-        <p>google auth</p>
-      </div>
+      {isAuthenticated ? (
+        <Event />
+      ) : (
+        <>
+          <div className="App">
+            <header className="App-header">
+              <img
+                src={logo}
+                onClick={() => {
+                  Redirect(<App />);
+                }}
+                className="homepage-logo"
+                alt="logo"
+              />
+            </header>
+            <div className="login-container">
+              <div id="firebaseui-auth-container" />
+            </div>
+          </div>
+        </>
+      )}
     </>
   );
 }

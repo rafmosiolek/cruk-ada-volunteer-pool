@@ -4,6 +4,10 @@ import Redirect from "./index";
 import App from "./App";
 import back from "./images/back-arrow.png";
 import image from "./images/event-example-image.jpg";
+import * as firebase from "firebase";
+import * as firebaseui from "firebaseui";
+import "firebase/auth";
+import "firebase/firestore";
 
 function Event() {
   return (

@@ -11,7 +11,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="homepage-logo" alt="logo" />
+        <img
+          src={logo}
+          onClick={() => {
+            Redirect(<App />);
+          }}
+          className="homepage-logo"
+          alt="logo"
+        />
       </header>
       <div className="login-container">
         <p className="login-label">Login:</p>
@@ -27,7 +34,7 @@ function App() {
           <img
             src={google}
             onClick={() => {
-              Redirect(<Event />);
+              Redirect(<GoogleAuth />);
             }}
           ></img>
         </div>
