@@ -1,0 +1,76 @@
+.subpage-header {
+    background-color: #ec008c;
+    display: block;
+    margin: 5px;
+    padding: 8px;
+    color: white;
+    height: 35px;
+    border-bottom: 2px solid black;
+  }
+  
+  .subpage-header img {
+    float: left;
+    position: fixed;
+    cursor: pointer;
+    vertical-align: middle;
+    height: 35px;
+  }
+  
+  .subpage-header-title {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .subpage-container {
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+
+  .profile-image {
+    height: 25%;
+    width: 35%;
+    float: left;
+  }
+
+  p {
+      margin-block-start: 0.1em;
+      margin-block-end: 0.1em;
+      border-radius: 5px;
+      background-color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: inline-block;
+      margin-right: 10px;
+  }
+
+  .customer-info {
+      margin: 40px 0 0 175px;
+      padding: 10px;
+      background-color: #2e008b;;
+      border-radius: 25px;
+      height: 100px;
+  }
+
+  .past-events {
+    margin: 20px 10px;
+    padding: 10px;
+    background-color: #2e008b;;
+    border-radius: 25px;
+    height: 100px;
+  }
+
+  .future-events {
+    margin: 20px 10px;
+    padding: 10px;
+    background-color: #2e008b;;
+    border-radius: 25px;
+    height: 100px;
+  }
