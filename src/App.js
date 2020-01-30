@@ -3,8 +3,6 @@ import React from "react";
 import logo from "./images/CRUK-logo.png";
 import "./App.css";
 import GoogleAuth from "./GoogleAuth";
-import Event from "./Event";
-import Profile from "./profile";
 import google from "./images/google-icon.png";
 import facebook from "./images/facebook-icon.png";
 import EventsList from "./EventsList";

@@ -21,7 +21,6 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
 //preloading constants:
@@ -66,23 +65,28 @@ function GoogleAuth() {
       {isAuthenticated ? (
         <EventsList user={firebase.auth().currentUser} />
       ) : (
-        <>
-          <div className="App">
-            <header className="App-header">
-              <img
-                src={logo}
-                onClick={() => {
-                  Redirect(<App />);
-                }}
-                className="homepage-logo"
-                alt="logo"
-              />
-            </header>
-            <div className="login-container">
-              <div id="firebaseui-auth-container" />
+        ((document.querySelector(".auth-container").style.display = "block"),
+        (
+          <>
+            <div className="App">
+              <header className="App-header">
+                <img
+                  src={logo}
+                  onClick={() => {
+                    Redirect(<App />);
+                    document.querySelector(".auth-container").style.display =
+                      "none";
+                  }}
+                  className="homepage-logo"
+                  alt="logo"
+                />
+              </header>
+              <div className="login-container">
+                <div id="firebaseui-auth-container" />
+              </div>
             </div>
-          </div>
-        </>
+          </>
+        ))
       )}
     </>
   );
