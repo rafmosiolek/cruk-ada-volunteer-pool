@@ -13,6 +13,11 @@ Please, don't use https protocol. This page is available only over http:// right
 3. Master will pull changes from staging daily and it auto deploy it to the http://cruk-ada-volunteer-pool.appspot.com/
 4. Have fun, ask questions, tell everyone about what you are working on. :-)
 
+# Risk Assessment
+
+We have analysed the possible risks of our application and produced some plans for mitigation of these risks. See the document here:
+https://docs.google.com/document/d/16CPFCwYBZ0CX7pNNbi5WQX473_RDej8L5rpntDsSyFo/edit?usp=sharing
+
 ## Getting started
 
 To get the project up and running on your local machine, follow these instructions:
