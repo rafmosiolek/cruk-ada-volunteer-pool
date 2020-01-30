@@ -77,6 +77,10 @@
   margin-top: 20px;
 }
 
+.volunteer-button:hover {
+  background-color: rgb(15, 206, 15);
+}
+
 .cancel-button,
 .qr-button {
   display: none;
@@ -94,11 +98,19 @@
   width: 150px;
 }
 
+.cancel-button:hover {
+  background-color: rgb(245, 71, 71);
+}
+
 .qr-button {
   background-color: black;
   width: 70px;
   height: 70px;
   border-radius: 8px;
+}
+
+.qr-button:hover {
+  background-color: rgb(43, 43, 43);
 }
 
 .button-container {

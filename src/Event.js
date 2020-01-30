@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Event.css";
 import Redirect from "./index";
 import App from "./App";
@@ -11,55 +11,57 @@ import "firebase/firestore";
 import Profile from "./profile";
 import EventsList from "./EventsList";
 
-function Event() {
-  return (
-    <div className="Event">
-      <div className="subpage-header">
-        <img
-          src={back}
-          onClick={() => {
-            Redirect(<EventsList />);
-          }}
-        ></img>
-        <div class="subpage-header-title">Event Name</div>
-      </div>
-      <div className="subpage-container">
-        <img src={image} className="event-image"></img>
-        <div class="event-details">
-          <div class="event-location">Location: location</div>
-          <div class="event-date">Date: date</div>
-        </div>
-        <div class="event-why">Why Volunteer?</div>
-        <div class="event-description">
-          700,000 runners, walkers, swimmers and sliders are limbering up to
-          join the fight against cancer but they can’t cross the finish line
-          without the passion and energy of volunteers like you. We simply
-          couldn't do it without the support of our amazing volunteers. You can
-          make a real difference to our research!
-        </div>
-
-        <button
-          class="volunteer-button"
-          onClick={() => {
-            toggleButtonDisplay("volunteer");
-          }}
-        >
-          Volunteer
-        </button>
-        <div class="button-container">
-          <button
-            class="cancel-button"
+class Event extends Component {
+  render() {
+    return (
+      <div className="Event">
+        <div className="subpage-header">
+          <img
+            src={back}
             onClick={() => {
-              toggleButtonDisplay("cancel");
+              Redirect(<EventsList user={this.props.user} />);
+            }}
+          ></img>
+          <div class="subpage-header-title">Event Name</div>
+        </div>
+        <div className="subpage-container">
+          <img src={image} className="event-image"></img>
+          <div class="event-details">
+            <div class="event-location">Location: location</div>
+            <div class="event-date">Date: date</div>
+          </div>
+          <div class="event-why">Why Volunteer?</div>
+          <div class="event-description">
+            700,000 runners, walkers, swimmers and sliders are limbering up to
+            join the fight against cancer but they can’t cross the finish line
+            without the passion and energy of volunteers like you. We simply
+            couldn't do it without the support of our amazing volunteers. You
+            can make a real difference to our research!
+          </div>
+
+          <button
+            class="volunteer-button"
+            onClick={() => {
+              toggleButtonDisplay("volunteer");
             }}
           >
-            Cancel
+            Volunteer
           </button>
-          <button class="qr-button">QR</button>
+          <div class="button-container">
+            <button
+              class="cancel-button"
+              onClick={() => {
+                toggleButtonDisplay("cancel");
+              }}
+            >
+              Cancel
+            </button>
+            <button class="qr-button">QR</button>
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 function toggleButtonDisplay(toggle) {

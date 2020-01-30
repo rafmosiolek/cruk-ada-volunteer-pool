@@ -99,3 +99,7 @@
   text-align: center;
   cursor: pointer;
 }
+
+.profile-events-entry:hover {
+  background-color: lightgrey;
+}

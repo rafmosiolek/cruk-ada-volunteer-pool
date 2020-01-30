@@ -10,6 +10,10 @@ import facebook from "./images/facebook-icon.png";
 import EventsList from "./EventsList";
 
 function App() {
+  var defaultUser = {
+    displayName: "Joe Johnson",
+    email: "joe.johnson@gmail.com"
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -28,7 +32,7 @@ function App() {
           <img
             src={facebook}
             onClick={() => {
-              Redirect(<EventsList />);
+              Redirect(<EventsList user={defaultUser} />);
             }}
           ></img>
         </div>

@@ -64,7 +64,7 @@ function GoogleAuth() {
   return (
     <>
       {isAuthenticated ? (
-        <EventsList />
+        <EventsList user={firebase.auth().currentUser} />
       ) : (
         <>
           <div className="App">

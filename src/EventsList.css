@@ -23,6 +23,10 @@
   cursor: pointer;
 }
 
+.event-container:hover {
+  background-color: #6021df;
+}
+
 .event-title {
   display: table-cell;
   padding: 10px;
