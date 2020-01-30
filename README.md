@@ -15,7 +15,9 @@ Please, don't use https protocol. This page is available only over http:// right
 
 # Risk Assessment
 
-We have analysed the possible risks of our application and produced some plans for mitigation of these risks. See the document here:
+We have analysed the possible risks of our application and produced some plans for mitigation of these risks. 
+
+See the document here:
 https://docs.google.com/document/d/16CPFCwYBZ0CX7pNNbi5WQX473_RDej8L5rpntDsSyFo/edit?usp=sharing
 
 ## Getting started
