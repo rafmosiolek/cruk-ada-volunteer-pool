@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import App from "./App";
 import Redirect from "./index";
+import Profile from "./profile";
 import logo from "./images/CRUK-logo.png";
 import Event from "./Event";
 import * as firebase from "firebase";
 import * as firebaseui from "firebaseui";
 import "firebase/auth";
 import "firebase/firestore";
+import EventsList from "./EventsList";
 
 const firebaseConfig = {
   apiKey: "AIzaSyC-OWZmd2zyeJ6tiq2gEUwEvQZtrtr1mOE",
@@ -62,7 +64,7 @@ function GoogleAuth() {
   return (
     <>
       {isAuthenticated ? (
-        <Event />
+        <EventsList />
       ) : (
         <>
           <div className="App">

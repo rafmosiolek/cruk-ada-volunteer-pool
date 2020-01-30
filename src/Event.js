@@ -8,6 +8,8 @@ import * as firebase from "firebase";
 import * as firebaseui from "firebaseui";
 import "firebase/auth";
 import "firebase/firestore";
+import Profile from "./profile";
+import EventsList from "./EventsList";
 
 function Event() {
   return (
@@ -16,7 +18,7 @@ function Event() {
         <img
           src={back}
           onClick={() => {
-            Redirect(<App />);
+            Redirect(<EventsList />);
           }}
         ></img>
         <div class="subpage-header-title">Event Name</div>

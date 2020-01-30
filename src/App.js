@@ -2,11 +2,12 @@ import Redirect from "./index";
 import React from "react";
 import logo from "./images/CRUK-logo.png";
 import "./App.css";
-//import GoogleAuth from "./GoogleAuth";
+import GoogleAuth from "./GoogleAuth";
 import Event from "./Event";
 import Profile from "./profile";
 import google from "./images/google-icon.png";
 import facebook from "./images/facebook-icon.png";
+import EventsList from "./EventsList";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
           <img
             src={facebook}
             onClick={() => {
-              Redirect(<Profile />);
+              Redirect(<EventsList />);
             }}
           ></img>
         </div>
