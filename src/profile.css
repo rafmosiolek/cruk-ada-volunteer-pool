@@ -59,7 +59,7 @@
       height: 100px;
   }
 
-  .past-events {
+  .events-list {
     margin: 20px 10px;
     padding: 10px;
     background-color: #2e008b;;
@@ -67,10 +67,17 @@
     height: 100px;
   }
 
-  .future-events {
-    margin: 20px 10px;
-    padding: 10px;
-    background-color: #2e008b;;
-    border-radius: 25px;
-    height: 100px;
+  .event-header {
+      border-bottom: 2px solid white;
+      color: white;
+      text-align: center;
+      padding-bottom: 3px;
+  }
+
+  .event {
+      margin: 3px 0;
+      padding: 3px 0 0 4em;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }

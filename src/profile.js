@@ -39,13 +39,21 @@ function Profile() {
           </div>
       </div>
 
-      <div className="past-events">
-          <div></div>
-      </div>
+      <div className="events-container">
 
-      <div className="future-events">
-          <div></div>
-      </div>
+        <div className="events-list">
+            <div className= "event-header">Previous Events</div>
+            <div className= "event"> Race for Life, Bath, 12/03/19 </div>
+            <div className= "event"> Race for Life, Liverpool, 27/05/19 </div>
+         </div>
+
+         <div className="events-list">
+             <div className= "event-header">Upcoming Events</div>
+             <div className= "event"> Race for Life, Hull, 01/03/20 </div>
+             <div className= "event"> Race for Life, Liverpool, 27/05/20 </div>
+        </div>
+
+         </div>
 
       </div>
   );
