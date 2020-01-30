@@ -1,25 +1,36 @@
 .homepage-logo {
+  width: 100%;
   max-width: 500px;
   margin: 0 auto;
   margin-top: 10%;
   display: block;
+  cursor: pointer;
 }
 
 .login-container {
   margin: 0 auto;
   display: table;
-  max-width: 500px;
+  width: 100%;
+  max-width: 300px;
   text-align: center;
   margin-top: 20px;
 }
 
 .login-label {
-  font-size: 30pt;
+  font-size: 25pt;
   display: table-cell;
-  padding: 20px;
+  padding: 10px;
+  vertical-align: middle;
 }
 
 .login-icon {
   display: table-cell;
-  padding: 20px;
+  padding: 10px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.login-icon img {
+  width: 50px;
+  height: 50px;
 }

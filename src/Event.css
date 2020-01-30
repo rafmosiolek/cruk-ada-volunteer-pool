@@ -1,0 +1,107 @@
+.subpage-header {
+  background-color: #e40085;
+  display: block;
+  margin: 5px;
+  padding: 8px;
+  color: white;
+  height: 35px;
+  border-bottom: 2px solid black;
+}
+
+.subpage-header img {
+  float: left;
+  position: fixed;
+  cursor: pointer;
+  vertical-align: middle;
+  height: 35px;
+}
+
+.subpage-header-title {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.subpage-container {
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.event-image {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.event-details {
+  display: block;
+}
+
+.event-location {
+  display: inline-block;
+  width: 49%;
+}
+
+.event-date {
+  display: inline-block;
+  text-align: right;
+  width: 49%;
+}
+
+.event-why {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.event-description {
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+.volunteer-button {
+  color: white;
+  background-color: rgb(10, 155, 10);
+  border: 0;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  width: 150px;
+  height: 35px;
+  font-size: 14pt;
+  margin-top: 20px;
+}
+
+.cancel-button,
+.qr-button {
+  display: none;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  font-size: 14pt;
+}
+
+.cancel-button {
+  background-color: red;
+  height: 35px;
+  margin-left: 30px;
+  margin-right: 20px;
+  width: 150px;
+}
+
+.qr-button {
+  background-color: black;
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+}
+
+.button-container {
+  display: table;
+  width: 100%;
+}
