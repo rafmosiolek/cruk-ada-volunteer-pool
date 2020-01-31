@@ -6,13 +6,13 @@ import back from "./images/back-arrow.png";
 import image from "./images/event-example-image.jpg";
 import * as firebase from "firebase";
 import * as firebaseui from "firebaseui";
-import qrcode from "./images/example-qr-code.png";
 import "firebase/auth";
 import "firebase/firestore";
 import Profile from "./profile";
 import EventsList from "./EventsList";
+import qrcode from "./images/example-qr-code.png";
 
-class Event extends Component {
+class FutureEvent extends Component {
   render() {
     return (
       <div className="Event">
@@ -50,6 +50,7 @@ class Event extends Component {
 
           <button
             class="volunteer-button"
+            style={{ display: "none" }}
             onClick={() => {
               toggleButtonDisplay("volunteer");
             }}
@@ -59,13 +60,18 @@ class Event extends Component {
           <div class="button-container">
             <button
               class="cancel-button"
+              style={{ display: "table-cell" }}
               onClick={() => {
                 toggleButtonDisplay("cancel");
               }}
             >
               Cancel
             </button>
-            <button class="qr-button" onClick={displayModal}>
+            <button
+              class="qr-button"
+              onClick={displayModal}
+              style={{ display: "table-cell" }}
+            >
               QR
             </button>
           </div>
@@ -97,4 +103,4 @@ function hideModal() {
   document.getElementById("myModal").style.display = "none";
 }
 
-export default Event;
+export default FutureEvent;

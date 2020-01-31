@@ -6,6 +6,7 @@ import Event from "./Event";
 import back from "./images/back-arrow.png";
 import profile from "./images/profile-img.png";
 import EventsList from "./EventsList";
+import FutureEvent from "./FutureEvent";
 
 class Profile extends Component {
   render() {
@@ -50,7 +51,7 @@ class Profile extends Component {
           <div
             className="profile-events-entry"
             onClick={() => {
-              Redirect(<Event user={this.props.user} />);
+              Redirect(<FutureEvent user={this.props.user} />);
             }}
           >
             Race for Life, Bath, 12/03/19
@@ -58,7 +59,7 @@ class Profile extends Component {
           <div
             className="profile-events-entry"
             onClick={() => {
-              Redirect(<Event user={this.props.user} />);
+              Redirect(<FutureEvent user={this.props.user} />);
             }}
           >
             Race for Life, Bath, 12/03/19
