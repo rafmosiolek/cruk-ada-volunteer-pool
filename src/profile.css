@@ -1,0 +1,105 @@
+.subpage-header {
+  background-color: #ec008c;
+  display: block;
+  margin: 5px;
+  padding: 8px;
+  color: white;
+  height: 35px;
+  border-bottom: 2px solid black;
+}
+
+.subpage-header img {
+  float: left;
+  position: fixed;
+  cursor: pointer;
+  vertical-align: middle;
+  height: 35px;
+}
+
+.subpage-header-title {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.subpage-container {
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.profile-image {
+  width: 70px;
+  height: 70px;
+  display: table-cell !important;
+  margin: 10px;
+  vertical-align: middle;
+}
+/* 
+  p {
+      margin-block-start: 0.1em;
+      margin-block-end: 0.1em;
+      border-radius: 5px;
+      background-color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: inline-block;
+      margin-right: 10px;
+  } */
+
+.customer-info {
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  display: table-cell;
+  width: 70%;
+  height: 30px;
+  vertical-align: middle;
+  padding-top: -20px;
+  padding-bottom: -20px;
+  text-align: center;
+  box-shadow: 0px 0px 8px 0px grey;
+}
+
+.profile-top-bar {
+  display: table;
+  width: 98%;
+  margin-top: 15px;
+}
+
+.customer-info p {
+  margin: 0 !important;
+  margin-bottom: 5px !important;
+}
+
+.profile-events-container {
+  margin: 20px 10px;
+  background-color: #2e008b;
+  border-radius: 25px;
+  padding-bottom: 20px;
+}
+
+.profile-events-header {
+  border-bottom: 1px solid rgb(74, 96, 221);
+  color: white;
+  text-align: center;
+  padding: 3px;
+  padding-top: 7px;
+}
+
+.profile-events-entry {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.profile-events-entry:hover {
+  background-color: lightgrey;
+}
